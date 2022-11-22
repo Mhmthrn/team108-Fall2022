@@ -27,9 +27,7 @@ public class C11_NestedIfElse {
             if (kartVarMi=='E' || kartVarMi=='e') System.out.println("%20 indirimli toplam Tutar :"+urunAdedi*listeFiyati*0.8);
             else if (kartVarMi=='H' || kartVarMi=='h')System.out.println("%15 indirimli toplam Tutar :"+urunAdedi*listeFiyati*0.85);
             else System.out.println("Hatali kart bilgisi");
-
-        }
-        else if (urunAdedi>0){
+        }else if (urunAdedi>0){
             if (kartVarMi=='E' || kartVarMi=='e') System.out.println("%15 indirimli toplam Tutar :"+urunAdedi*listeFiyati*0.85);
             else if (kartVarMi=='H' || kartVarMi=='h')System.out.println("%10 indirimli toplam Tutar :"+urunAdedi*listeFiyati*0.90);
             else System.out.println("Hatali kart bilgisi");
