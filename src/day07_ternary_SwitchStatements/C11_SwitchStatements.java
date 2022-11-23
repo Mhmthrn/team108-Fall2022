@@ -2,6 +2,7 @@ package day07_ternary_SwitchStatements;
 
 public class C11_SwitchStatements {
     public static void main(String[] args) {
+
         /*
         Kullanicidan ISTQB kisaltmasindan hangi harfin anlamini
         ogrenmek istedigini alin ve girilen harfin karsiligini yazdirin.
@@ -34,6 +35,7 @@ public class C11_SwitchStatements {
                 break;
             default:
                 System.out.println("Tanimsiz harf secimi");
+
 
 
 
