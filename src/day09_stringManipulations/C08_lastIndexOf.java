@@ -13,9 +13,6 @@ public class C08_lastIndexOf {
         System.out.println(str.lastIndexOf("a", 15));//3
 
 
-
-
-
         // verilen str da cok kelimesisin kullanimini kantrol edip
         // cok kelimesi kullanilmamis
         // bir kere kullanilmis
@@ -33,10 +30,6 @@ public class C08_lastIndexOf {
         }else {
             System.out.println("cok kelimesi birden fazla kullanilmistir");
         }
-
-
-
-
 
     }
 }

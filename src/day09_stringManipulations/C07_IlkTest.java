@@ -9,6 +9,7 @@ public class C07_IlkTest {
 
         String input = "1-48 of 87 results for \"nutella\"";
 
+
         int indexOf = input.indexOf("of");
         int indexResult = input.indexOf("result");
 
@@ -22,6 +23,7 @@ public class C07_IlkTest {
         } else {
             System.out.println("yeterli arama sayisi yok, arma testi FAILD");
         }
+
 
     }
 }
