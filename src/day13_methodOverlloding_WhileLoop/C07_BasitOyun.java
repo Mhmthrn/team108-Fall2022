@@ -36,27 +36,33 @@ public class C07_BasitOyun {
                 flag = false;
                 break;
             } else if (tahminSayi > tutulanSayi) {
-                System.out.println("Tahmininizi Kucultunuz");
                 sayac++;
-            } else if (tahminSayi < tutulanSayi) {
-                System.out.println("Tahmininizi buyultunuz");
-                sayac++;
-            } else {
-                if (sayac <= 10) {
+                if (sayac >= 10) {
                     System.out.println("10 Tahmin Hakkiniz Bitti");
                     break;
                 }
+                System.out.println("Tahmininizi Kucultunuz");
+
+            } else if (tahminSayi < tutulanSayi) {
+                sayac++;
+                if (sayac >= 10) {
+                    System.out.println("10 Tahmin Hakkiniz Bitti");
+                    break;
+                }
+                System.out.println("Tahmininizi buyultunuz");
+
             }
-        }
+
+            }
+
+
         if (sayac <= 3) {
             System.out.println("Vaowww");
         } else if (sayac >= 4 || sayac <= 8) {
-            System.out.println("Tahmininizi Kucultunuz");
-            if (sayac <= 3) {
-                sayac++;
-            } else {
+            System.out.println("Aferin !!!!!!");
+        } else {
                 System.out.println("Basarisiz oldunuz");
             }
         }
     }
-}
+

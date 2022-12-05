@@ -27,6 +27,8 @@ public class C02_MethodOverlooding {
 
         toplama(4.5,6.7); // 2 double sayi toplami :11.2
 
+        toplama(4,5.5);//int ve double toplami :9.5
+
 
     }
 

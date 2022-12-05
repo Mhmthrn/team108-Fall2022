@@ -31,8 +31,8 @@ public class C09_FibonacciSerisi {
                 System.out.print(sayi3+ " ");
                 sayi1=sayi2;
                 sayi2=sayi3;
-
-        }
+            }
+            System.out.println("");
     }
 }
 }
