@@ -1,5 +1,7 @@
 package day15_scope_arrays;
 
+import java.util.Arrays;
+
 public class C04_Arrays {
     public static void main(String[] args) {
 
@@ -14,6 +16,7 @@ public class C04_Arrays {
 
         // String'de kullandigimiz harfler.length() bir method iken
         // array'deki length method degil variable'dir  arr.length
+
 
     }
 }
