@@ -14,22 +14,6 @@ public class C11_Odev {
         kullanici q bastiginda arr nin son halini dondurun.
          */
 
-        Scanner scan =new Scanner(System.in);
-        System.out.println("Lutfen eklemek istediginiz ismi giriniz"
-        +"\nEkleme islemini bitirmek icin Q ya, veya q basiniz");
-
-        String girilenIsim=scan.nextLine();
-
-        String [] yenihali=new String[1];
-
-        while (!(girilenIsim.substring(0,1).contains("Q") || girilenIsim.substring(0,1).contains("q")) ){
-
-            yenihali= arreyeElementEkleme(yenihali,girilenIsim);
-
-
-        }
-        System.out.println(Arrays.toString(yenihali));
-
 
     }
 }
