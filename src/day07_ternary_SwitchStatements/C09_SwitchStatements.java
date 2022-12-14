@@ -33,6 +33,8 @@ public class C09_SwitchStatements {
                 break;
             default:
                 System.out.println("Gecersiz gun no");
+
+
             }
         }
 

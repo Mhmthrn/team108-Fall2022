@@ -8,7 +8,7 @@ public class C07_set {
         /*
         java da bir cok yapida get ve set methodlari bulunur
 
-        get bi bilgiyi getirir
+        get bir bilgiyi getirir
         set istedigimiz bilgiyi gunceller
          */
         List<String> harfler= new ArrayList<>();
