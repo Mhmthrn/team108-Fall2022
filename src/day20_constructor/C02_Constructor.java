@@ -34,6 +34,16 @@ public class C02_Constructor {
             km=0
             renk='Renk secilmedi'}
          */
+
+        Car car3=new Car("Toyota","Corolla",2016,"Gri");
+        System.out.println(car3);
+        /*
+        Car{marka='Toyota'
+            modell='Corolla'
+            yil=2016
+            km=0
+            renk='Gri'}
+         */
     }
 
     public static void karesiniYazdir(int sayi){
