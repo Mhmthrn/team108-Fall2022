@@ -18,7 +18,7 @@ public class C01_Constructor {
         istenen ozelliklikleri kapsayan bir toString() methodu olustutulabiliri.
          */
 
-        car1.marka="Auidi";
+        car1.marka="Audi";
         car1.modell="A4";
         car1.yil=2020;
         car1.km=20000;
