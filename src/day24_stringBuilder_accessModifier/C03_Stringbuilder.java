@@ -17,6 +17,8 @@ public class C03_Stringbuilder {
         System.out.println(sb1.compareTo(sb3));// 2
 
         sb3=new StringBuilder("Tava");
+        System.out.println(sb3.subSequence(1, 3));
+        System.out.println(sb3);
         System.out.println(sb1.compareTo(sb3));//-10
 
         sb3=new StringBuilder("Jaka");
