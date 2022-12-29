@@ -34,7 +34,9 @@ public class  BDoktor extends APersonel {
         doktor1.soyIsim="Malazgirt";
         doktor1.telefon="444555888777";
 
-        System.out.println(doktor1.toString());
+        System.out.println(doktor1);
+
+
         doktor1.maas();
         doktor1.ozelSigorta();
         doktor1.nobet();
