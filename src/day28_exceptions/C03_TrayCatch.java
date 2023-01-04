@@ -30,6 +30,7 @@ public class C03_TrayCatch {
              String girilenDeger = scan.nextLine();
              if (girilenDeger.equalsIgnoreCase("q")) {
                  System.out.println("Girilen " + sayiAdedi + " sayinin Toplami : " + toplam);
+                 break;
 
              } else {
                  System.out.println("Gecersiz input girisi");
