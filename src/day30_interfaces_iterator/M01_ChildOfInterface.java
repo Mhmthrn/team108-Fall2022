@@ -15,6 +15,8 @@ public class M01_ChildOfInterface  implements  I01_Interface,I02_Interfaces {
     public static void main(String[] args) {
         System.out.println(I02_Interfaces.SAYI2);
 
+        I01_Interface.method34();
+
 
         M01_ChildOfInterface obj=new M01_ChildOfInterface();
         obj.method44();
