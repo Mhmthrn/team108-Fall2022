@@ -18,7 +18,7 @@ public class C01_CumledeHarfSayisiniBulma {
     public static void main(String[] args) {
         String cumle="Java candir.";
 
-        // incelikle bosluk ve noktalama israreetlerini yok edelim
+        // oncelikle bosluk ve noktalama israreetlerini yok edelim
 
         cumle=cumle.replaceAll("\\W","");// Javacandir
 

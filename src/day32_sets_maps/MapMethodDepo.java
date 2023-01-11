@@ -217,7 +217,7 @@ public class MapMethodDepo {
 
         /*
         mapde istedigimniz degisiklikleri yaptiktan sonrt
-        mapi update etmenin en kolay yolu setEntry die
+        mapi update etmenin en kolay yolu setEntry dir
          */
             Set<Map.Entry<Integer, String>> entrySeti = ogrenciMap.entrySet();
 
@@ -314,6 +314,40 @@ public class MapMethodDepo {
         for (String each : siraliOgrenciSeti) {
             System.out.println(each);
         }
+    }
+
+    public static void obsSirali(Map<Integer, String> ogrenciMap) {
+        //Bolum Isim Soyisim Sinif Sube No
+
+        Set<Map.Entry<Integer,String>> enrtySet=ogrenciMap.entrySet();
+
+        Set<String> siraliListe=new TreeSet<>();
+
+        for (Map.Entry<Integer, String> eachEntry : enrtySet) {
+
+            String  eachValue=eachEntry.getValue();
+
+            String [] eachValueArr=eachValue.split("-");
+            //101, "Ali-Can-11-H-MF"
+            String istenenFormat=eachValueArr[4]+" "+
+                                 eachValueArr[0]+" "+
+                                 eachValueArr[1]+" "+
+                                 eachValueArr[2]+" "+
+                                 eachValueArr[3]+" "+
+                                 eachEntry.getKey();
+
+            siraliListe.add(istenenFormat);
+
+        }
+
+        System.out.println("Bolum  Isim  Soyisim  Sinif  Sube  No");
+        System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+
+        for (String each:siraliListe){
+            System.out.println(each);
+        }
+
+
     }
 }
 
