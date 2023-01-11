@@ -3,6 +3,7 @@ package day32_sets_maps;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MapMethodDepo {
 
@@ -78,7 +79,7 @@ public class MapMethodDepo {
 
     }
 
-    public static void sinifListesiYazdirma(Map<Integer, String> ogrenciMap, String sinif, String sube) {
+    public static void subeListesiYazdirma(Map<Integer, String> ogrenciMap, String sinif, String sube) {
 
         Collection<String> valueColletion=ogrenciMap.values();
 
@@ -117,5 +118,69 @@ public class MapMethodDepo {
 
         return ogrenciMap;
 
+    }
+
+    public static void sinifListesiYazadirma(Map<Integer, String> ogrenciMap, String sinif) {
+
+        System.out.println("No Isim Soyisim Bolum");
+        System.out.println("=-=-=-=-=-=-=-=-=-=-=-=");
+
+        Set<Map.Entry<Integer, String>> entrySeti = ogrenciMap.entrySet();
+
+        for (Map.Entry<Integer,String> eachEntry:entrySeti
+            ){
+
+            //1- entry den value yi alalim
+            String entryValue=eachEntry.getValue();
+
+            // bu value yi parcalayalim ve bir arr ye stor edelim
+
+            String  [] valueArr=entryValue.split("-");
+
+            // sinif bilgisini kontrol edip istenen sinif ile ayni ise bilgileri yazdiralim
+
+            if (valueArr[2].equalsIgnoreCase(sinif)){
+
+                System.out.println(eachEntry.getKey()+ " "+
+                                   valueArr[0]+" "+
+                                   valueArr[1]+" "+
+                                   valueArr[2]+" ");
+            }
+
+
+
+        }
+
+
+    }
+
+    public static void bolumListesiOlustuma(Map<Integer, String> ogrenciMap, String bolum) {
+        System.out.println("No Isim Soyisim Sinif");
+        System.out.println("=-=-=-=-=-=-=-=-=-=-=-=");
+
+        Set<Map.Entry<Integer, String>> entrySeti = ogrenciMap.entrySet();
+
+        for (Map.Entry<Integer, String> eachEntry : entrySeti
+        ) {
+
+
+            String entryValue = eachEntry.getValue();
+
+
+
+            String[] valueArr = entryValue.split("-");
+
+
+
+            if (valueArr[4].equalsIgnoreCase(bolum)) {
+
+                System.out.println(eachEntry.getKey() + " " +
+                        valueArr[0] + " " +
+                        valueArr[1] + " " +
+                        valueArr[2] + " ");
+            }
+
+
+        }
     }
 }
