@@ -11,6 +11,7 @@ public class C07_SinifaGoreSiraliListeYazdir {
      */
     public static void main(String[] args) {
         Map<Integer,String> ogrenciMap= MapMethodDepo.ogrenciMapOlustur();
+        ogrenciMap.put(110,"Ebubekir-Gokkaya-10-H-MF");
 
         MapMethodDepo.sinifaGoreSiraliYazdir(ogrenciMap);
 

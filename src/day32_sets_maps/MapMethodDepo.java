@@ -274,10 +274,20 @@ public class MapMethodDepo {
 
 
         }
-        System.out.println("Sinif Sube Isim Soysisim No");
-        System.out.println("=====================");
+        System.out.println("Sinif  Sube  Isim     Soysisim     No");
+        System.out.println("======================================");
         for (String each : siraliOgrenciSeti) {
-            System.out.println(each);
+            //System.out.println(each);
+            String [] duzenliYazdirArr=each.split(" ");
+
+            String sinif=duzenliYazdirArr[0];
+            String sube=duzenliYazdirArr[1];
+            String isim=duzenliYazdirArr[2];
+            String soyisim=duzenliYazdirArr[3];
+            String no=duzenliYazdirArr[4];
+            //10 H Ayse Can 104
+
+            System.out.printf("%-2s     %-4s %-8.8S %-8s %7s%n",sinif,sube,isim,soyisim,no);
         }
 
     }
